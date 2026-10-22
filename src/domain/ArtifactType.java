@@ -4,16 +4,16 @@ import java.util.Vector;
 
 enum ArtifactType {
 
-  TECH_RELIC,
+    TECH_RELIC,
 
-  ENERGY_CRYSTAL,
+    ENERGY_CRYSTAL,
 
-  RADIOACTIVE_MATERIAL;
+    RADIOACTIVE_MATERIAL;
 
     /**
-   * 
-   * @element-type Artifact
-   */
-  public Vector  hasType;
+     *
+     * @element-type Artifact
+     */
+    public Vector hasType;
 
 }

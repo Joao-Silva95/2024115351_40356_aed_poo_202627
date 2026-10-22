@@ -4,12 +4,12 @@ import java.util.List;
 
 public interface GraphManagement {
 
-  List<String> getShortestPath();
+    List<String> getShortestPath();
 
-  boolean isConnected();
+    boolean isConnected();
 
-  void extractSubgraph();
+    void extractSubgraph();
 
-  List<String> recommendOptimalRoute();
+    List<String> recommendOptimalRoute();
 
 }

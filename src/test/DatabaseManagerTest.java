@@ -1,8 +1,10 @@
 package test;
 
 import domain.*;
+
 import java.time.LocalDate;
 import java.util.NoSuchElementException;
+
 import repository.DatabaseManager;
 
 /**
@@ -10,7 +12,9 @@ import repository.DatabaseManager;
  */
 public class DatabaseManagerTest {
 
-    /** Insere com ID do utilizador e com ID gerado, e testa ID repetido. */
+    /**
+     * Insere com ID do utilizador e com ID gerado, e testa ID repetido.
+     */
     public static void testInsert(DatabaseManager db) {
         System.out.println("--- Inserir ---");
         db.insertEntity(new ExplorerRobot(10, "Explorer-A", 90, LocalDate.of(2026, 1, 15), "ACTIVE", 25));
@@ -28,7 +32,9 @@ public class DatabaseManagerTest {
         }
     }
 
-    /** Edita atributos e confirma a alteração ao pesquisar de novo. */
+    /**
+     * Edita atributos e confirma a alteração ao pesquisar de novo.
+     */
     public static void testEdit(DatabaseManager db) {
         System.out.println("--- Editar ---");
         db.editEntity(10, Robot.class, r -> {
@@ -52,14 +58,18 @@ public class DatabaseManagerTest {
         }
     }
 
-    /** Remove uma entidade existente e uma inexistente. */
+    /**
+     * Remove uma entidade existente e uma inexistente.
+     */
     public static void testRemove(DatabaseManager db) {
         System.out.println("--- Remover ---");
         System.out.println("Removido: " + db.removeEntity(30));
         System.out.println("Removido (inexistente): " + db.removeEntity(30));
     }
 
-    /** Lista tudo por tipo. */
+    /**
+     * Lista tudo por tipo.
+     */
     public static void testList(DatabaseManager db) {
         System.out.println("--- Listar ---");
         db.listRobots().forEach(System.out::println);
@@ -70,6 +80,7 @@ public class DatabaseManagerTest {
 
     /**
      * Executa todos os testes do R2.
+     *
      * @param args não utilizado
      */
     public static void main(String[] args) {
