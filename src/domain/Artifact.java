@@ -65,4 +65,9 @@ public abstract class Artifact extends Entity {
     return super.toString() + "{weight=" + weight + ", science=" + scientificValue
             + ", danger=" + dangerLevel + "}";
   }
+  // Retorna a descrição do artefacto
+  /** @return alias para a descrição do artefacto (R3) */
+  public String getDescription() {
+    return getName(); // Usa o atributo name herdado de Entity
+  }
 }

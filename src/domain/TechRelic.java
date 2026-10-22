@@ -16,8 +16,7 @@ public class TechRelic extends Artifact {
    * @param dangerLevel nível de perigo
    * @param historicalEra época histórica
    */
-  public TechRelic(int id, String name, double weight, int scientificValue,
-                   int dangerLevel, String historicalEra) {
+  public TechRelic(int id, String name, double weight, int scientificValue, int dangerLevel, String historicalEra) {
     super(id, name, weight, scientificValue, dangerLevel);
     this.historicalEra = historicalEra;
   }

@@ -18,8 +18,7 @@ public class ExplorerRobot extends Robot {
    * @param operationalState estado operacional
    * @param scanRadius raio de varrimento (m)
    */
-  public ExplorerRobot(int id, String name, double batteryLevel, LocalDate systemVersionDate,
-                       String operationalState, double scanRadius) {
+  public ExplorerRobot(int id, String name, double batteryLevel, LocalDate systemVersionDate, String operationalState, double scanRadius) {
     super(id, name, batteryLevel, systemVersionDate, operationalState);
     this.scanRadius = scanRadius;
   }

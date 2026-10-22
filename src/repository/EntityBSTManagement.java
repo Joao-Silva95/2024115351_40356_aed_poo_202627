@@ -5,12 +5,12 @@ import domain.Entity;
 
 public interface EntityBSTManagement {
 
-  List<Entity> searchRobotsByBatteryRange();
+  List<Entity> searchRobotsByBatteryRange(double minBattery, double maxBattery);
 
-  List<Entity> searchArtifactsByScientificValue();
+  List<Entity> searchArtifactsByScientificValue(double minVal, double maxVal);
 
-  List<Entity> searchRoomsByHazardIndex();
+  List<Entity> searchRoomsByHazardIndex(double minHazard, double maxHazard);
 
-  List<Entity> searchBySubstring();
+  List<Entity> searchBySubstring(String query);
 
 }

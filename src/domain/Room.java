@@ -76,4 +76,13 @@ public class Room extends Entity {
     return super.toString() + "{zone=" + zoneType + ", security=" + securityLevel
             + ", hazard=" + hazardIndex + ", maintenance=" + maintenanceRoom + "}";
   }
+  /** @return alias para o índice de perigo ambiental (R3) */
+  public double getEnvironmentalHazardIndex() {
+    return getHazardIndex();
+  }
+
+  /** @return alias para o código da sala, herdado de Entity (R3) */
+  public String getRoomCode() {
+    return getName();
+  }
 }
