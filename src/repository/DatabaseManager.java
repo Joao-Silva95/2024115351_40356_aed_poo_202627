@@ -144,7 +144,7 @@ public class DatabaseManager implements EntityHashManagement, EntityBSTManagemen
     }
 
     /**
-     * Regista a entidade nas estruturas ordenadas RedBlackBST[cite: 3].
+     * Regista a entidade nas estruturas ordenadas RedBlackBST.
      */
     private void index(Entity e) {
         if (e instanceof Robot r) {
@@ -163,7 +163,7 @@ public class DatabaseManager implements EntityHashManagement, EntityBSTManagemen
     }
 
     /**
-     * Remove a entidade das estruturas ordenadas RedBlackBST[cite: 3].
+     * Remove a entidade das estruturas ordenadas RedBlackBST.
      */
     private void unindex(Entity e) {
         if (e instanceof Robot r) {
@@ -194,7 +194,7 @@ public class DatabaseManager implements EntityHashManagement, EntityBSTManagemen
      * Arquiva a entidade removida (R4).
      */
     private void archive(Entity e) {
-        // Será preenchido no R4 para log/ficheiro de histórico[cite: 4]
+        // Será preenchido no R4 para log/ficheiro de histórico
     }
 
     // =========================================================
