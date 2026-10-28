@@ -1,4 +1,4 @@
-package test;
+package test.R2;
 
 import domain.*;
 import repository.DatabaseManager;
@@ -6,7 +6,7 @@ import repository.DatabaseManager;
 import java.time.LocalDate;
 import java.util.NoSuchElementException;
 
-import static test.TestUtil.*;
+import static test.Common.TestUtil.*;
 
 /**
  * Testes do R2: inserir, remover, editar e listar nas Tabelas de Símbolos.

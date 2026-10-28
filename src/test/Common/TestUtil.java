@@ -1,4 +1,4 @@
-package test;
+package test.Common;
 
 import domain.*;
 import repository.DatabaseManager;

@@ -1,4 +1,4 @@
-package test;
+package test.R4;
 
 import domain.*;
 import repository.DatabaseManager;
