@@ -34,3 +34,4 @@ bin/
 ### Ficheiros gerados pela aplicação e pelos testes ###
 archive.txt
 test_output/
+AllTests_output.txt
