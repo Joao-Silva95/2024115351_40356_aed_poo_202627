@@ -140,4 +140,9 @@ public class Room extends Entity {
     public String getRoomCode() {
         return getName();
     }
+    @Override
+    protected String extraFields() {
+        return ";" + zoneType + ";" + securityLevel + ";" + hazardIndex + ";"
+                + detectionDate + ";" + maintenanceRoom;
+    }
 }

@@ -93,4 +93,9 @@ public abstract class Robot extends Entity {
         return super.toString() + "{battery=" + batteryLevel + ", state=" + operationalState
                 + ", version=" + systemVersionDate + "}";
     }
+
+    @Override
+    protected String extraFields() {
+        return ";" + batteryLevel + ";" + systemVersionDate + ";" + operationalState;
+    }
 }
