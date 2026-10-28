@@ -111,4 +111,8 @@ public abstract class Artifact extends Entity {
     public String getDescription() {
         return getName(); // Usa o atributo name herdado de Entity
     }
+    @Override
+    protected String extraFields() {
+        return ";" + weight + ";" + scientificValue + ";" + dangerLevel + ";" + collectedTimestamp;
+    }
 }

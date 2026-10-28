@@ -41,4 +41,8 @@ public class ExplorerRobot extends Robot {
 
     public void scanSector() {
     }
+    @Override
+    protected String extraFields() {
+        return super.extraFields() + ";" + scanRadius;
+    }
 }

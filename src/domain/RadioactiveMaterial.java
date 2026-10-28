@@ -36,4 +36,8 @@ public class RadioactiveMaterial extends Artifact {
     public void setRadiationLevel(double radiationLevel) {
         this.radiationLevel = radiationLevel;
     }
+    @Override
+    protected String extraFields() {
+        return super.extraFields() + ";" + radiationLevel;
+    }
 }

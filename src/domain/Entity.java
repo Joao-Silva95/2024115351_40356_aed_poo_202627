@@ -70,6 +70,20 @@ public abstract class Entity {
     }
 
     /**
+     * @return a entidade numa linha de texto (tipo;id;nome;atributos...), usada no arquivo
+     */
+    public String toRecord() {
+        return getClass().getSimpleName() + ";" + id + ";" + name + extraFields();
+    }
+
+    /**
+     * @return os atributos próprios da subclasse, cada um precedido de ";"
+     */
+    protected String extraFields() {
+        return "";
+    }
+
+    /**
      * @param name novo nome (não vazio)
      */
     public void setName(String name) {

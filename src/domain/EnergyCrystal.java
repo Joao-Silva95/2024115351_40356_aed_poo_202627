@@ -36,4 +36,8 @@ public class EnergyCrystal extends Artifact {
     public void setEnergyYield(double energyYield) {
         this.energyYield = energyYield;
     }
+    @Override
+    protected String extraFields() {
+        return super.extraFields() + ";" + energyYield;
+    }
 }

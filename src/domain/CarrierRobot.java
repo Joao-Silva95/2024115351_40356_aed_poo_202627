@@ -68,5 +68,8 @@ public class CarrierRobot extends Robot {
 
     public void dropArtifact() {
     }
-
+    @Override
+    protected String extraFields() {
+        return super.extraFields() + ";" + cargoCapacity + ";" + currentCargoWeight;
+    }
 }

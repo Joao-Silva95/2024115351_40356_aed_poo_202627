@@ -36,4 +36,8 @@ public class TechRelic extends Artifact {
     public void setHistoricalEra(String historicalEra) {
         this.historicalEra = historicalEra;
     }
+    @Override
+    protected String extraFields() {
+        return super.extraFields() + ";" + historicalEra;
+    }
 }
