@@ -1,6 +1,6 @@
 package graph;
 
-class MultiEdge {
+public class MultiEdge {
 
     private double distance;
 
