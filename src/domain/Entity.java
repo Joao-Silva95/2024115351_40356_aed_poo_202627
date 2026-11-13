@@ -1,7 +1,5 @@
 package domain;
 
-import graph.LabyrinthGraph;
-
 /**
  * Entidade base do sistema, identificada por um ID inteiro único
  */
@@ -91,8 +89,6 @@ public abstract class Entity {
             throw new IllegalArgumentException("Nome inválido");
         this.name = name;
     }
-
-    public LabyrinthGraph hasVertices;
 
     @Override
     public String toString() {

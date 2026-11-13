@@ -1,37 +1,66 @@
 package graph;
 
+/**
+ * Aresta do grafo com vários pesos (distância, energia, radiação, tempo), tipo de relação e timestamp.
+ */
+
 public class MultiEdge {
 
-    private double distance;
+    /** Índice do vértice de origem. */
+    private final int origem;
 
-    private double energyCost;
+    /** Índice do vértice de destino. */
+    private final int destino;
 
-    private double radiationDangerLevel;
+    /** Tipo de relação. */
+    private final RelationType type;
 
-    private double transitTime;
+    /** Distância. */
+    private final double distance;
 
-    private long edgeTimestamp;
+    /** Consumo de energia. */
+    private final double energyCost;
 
-    public LabyrinthGraph hasEdges;
+    /** Nível de perigo de radiação. */
+    private final double radiationDangerLevel;
 
-  private int origem; // Adiciona os índices para saberes de onde para onde vai
-  private int destino;
+    /** Tempo de trânsito. */
+    private final double transitTime;
 
-  public MultiEdge(int origem, int destino, double distance, double energyCost, double radiationDangerLevel, double transitTime, long edgeTimestamp) {
+    /** Instante do evento ou registo, em ms. */
+    private final long edgeTimestamp;
+
+    public MultiEdge(int origem, int destino, RelationType type, double distance, double energyCost, double radiationDangerLevel, double transitTime, long edgeTimestamp) {
     this.origem = origem;
     this.destino = destino;
+    this.type=type;
     this.distance = distance;
     this.energyCost = energyCost;
     this.radiationDangerLevel = radiationDangerLevel;
     this.transitTime = transitTime;
     this.edgeTimestamp = edgeTimestamp;
 }
-  public int from() { return origem; }
-  public int to() { return destino; }
+    /** @return índice de origem */
+    public int from() { return origem; }
 
-  public double getDistance() { return distance; }
-  public double getEnergyCost() { return energyCost; }
-  public double getRadiationDangerLevel() { return radiationDangerLevel; }
-  public double getTransitTime() { return transitTime; }
-  public long getEdgeTimestamp() { return edgeTimestamp; }
+    /** @return índice de destino */
+    public int to() { return destino; }
+
+    /** @return tipo de relação */
+    public RelationType getType() {return type;}
+
+    /** @return distância */
+    public double getDistance() { return distance; }
+
+    /** @return consumo de energia */
+    public double getEnergyCost() { return energyCost; }
+
+    /** @return perigo de radiação */
+    public double getRadiationDangerLevel() { return radiationDangerLevel; }
+
+    /** @return tempo de trânsito */
+    public double getTransitTime() { return transitTime; }
+
+    /** @return timestamp (ms) */
+    public long getEdgeTimestamp() { return edgeTimestamp; }
 }

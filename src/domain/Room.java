@@ -41,8 +41,7 @@ public class Room extends Entity {
      * @param detectionDate   data de deteção
      * @param maintenanceRoom true se a sala for uma estação de manutenção
      */
-    public Room(int id, String name, String zoneType, int securityLevel,
-                double hazardIndex, LocalDate detectionDate, boolean maintenanceRoom) {
+    public Room(int id, String name, String zoneType, int securityLevel, double hazardIndex, LocalDate detectionDate, boolean maintenanceRoom) {
         super(id, name);
         this.zoneType = zoneType;
         this.securityLevel = securityLevel;
