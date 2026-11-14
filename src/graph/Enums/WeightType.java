@@ -1,4 +1,6 @@
-package graph;
+package graph.Enums;
+
+import graph.Model.MultiEdge;
 
 /** Critério de peso usado nos caminhos mais curtos. */
 public enum WeightType {

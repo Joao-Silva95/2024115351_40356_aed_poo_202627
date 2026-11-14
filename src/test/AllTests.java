@@ -4,6 +4,7 @@ import test.R2.DatabaseManagerTest;
 import test.R3.SearchTest;
 import test.R4.ConsistencyTest;
 import test.R7.TestR7;
+import test.R8.*;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -41,6 +42,8 @@ public class AllTests {
         SearchTest.runAll();
         ConsistencyTest.runAll();
         TestR7.runAll();
+        GraphAlgorithmsTest.runAll();
+        LargeScaleGraphTest.runAll();
         summary();
 
         file.close();

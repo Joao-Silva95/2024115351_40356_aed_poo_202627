@@ -1,9 +1,18 @@
-package domain;
+package domain.Artifacts;
+
+import domain.Artifacts.ArtifactType;
+import domain.Common.Entity;
+import domain.Robots.Robot;
 
 /**
  * Artefacto recuperável no labirinto
  */
 public abstract class Artifact extends Entity {
+
+    /**
+     * Tipo
+     */
+    private final ArtifactType type;
 
     /**
      * Peso, em kg
@@ -32,13 +41,20 @@ public abstract class Artifact extends Entity {
      * @param scientificValue valor científico
      * @param dangerLevel     nível de perigo
      */
-    protected Artifact(int id, String name, double weight, int scientificValue, int dangerLevel) {
+    protected Artifact(int id, String name, ArtifactType type, double weight, int scientificValue, int dangerLevel) {
         super(id, name);
+        this.type = type;
         this.weight = weight;
         this.scientificValue = scientificValue;
         this.dangerLevel = dangerLevel;
     }
 
+    /**
+     * @return tipo
+     */
+    public ArtifactType getType() {
+        return type;
+    }
     /**
      * @return peso (kg)
      */
@@ -100,8 +116,7 @@ public abstract class Artifact extends Entity {
 
     @Override
     public String toString() {
-        return super.toString() + "{weight=" + weight + ", science=" + scientificValue
-                + ", danger=" + dangerLevel + "}";
+        return super.toString() + "{type=" + type + ", weight=" + weight + ", science=" + scientificValue + ", danger=" + dangerLevel + "}";
     }
     // Retorna a descrição do artefacto
 
@@ -111,8 +126,9 @@ public abstract class Artifact extends Entity {
     public String getDescription() {
         return getName(); // Usa o atributo name herdado de Entity
     }
+
     @Override
     protected String extraFields() {
-        return ";" + weight + ";" + scientificValue + ";" + dangerLevel + ";" + collectedTimestamp;
+        return ";" + type + ";" + weight + ";" + scientificValue + ";" + dangerLevel + ";" + collectedTimestamp;
     }
 }

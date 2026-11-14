@@ -1,4 +1,6 @@
-package domain;
+package domain.Environment;
+
+import domain.Common.Entity;
 
 import java.time.LocalDate;
 

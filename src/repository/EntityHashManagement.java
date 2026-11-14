@@ -1,6 +1,9 @@
 package repository;
 
-import domain.*;
+import domain.Artifacts.Artifact;
+import domain.Common.Entity;
+import domain.Environment.Room;
+import domain.Robots.Robot;
 
 import java.util.List;
 import java.util.function.Consumer;

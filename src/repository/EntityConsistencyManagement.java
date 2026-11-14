@@ -1,6 +1,6 @@
 package repository;
 
-import domain.Entity;
+import domain.Common.Entity;
 
 import java.util.List;
 

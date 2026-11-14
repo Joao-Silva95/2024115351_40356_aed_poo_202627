@@ -1,6 +1,9 @@
 package test.R4;
 
-import domain.*;
+import domain.Artifacts.Artifact;
+import domain.Common.Entity;
+import domain.Environment.Room;
+import domain.Robots.Robot;
 import repository.DatabaseManager;
 
 import java.io.IOException;

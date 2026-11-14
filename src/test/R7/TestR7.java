@@ -1,8 +1,12 @@
 package test.R7;
 
-import domain.*;
-import graph.LabyrinthGraph;
-import graph.MultiEdge;
+import domain.Artifacts.Artifact;
+import domain.Environment.Room;
+import domain.Resources.EnergyCrystal;
+import domain.Robots.ExplorerRobot;
+import domain.Robots.Robot;
+import graph.Model.LabyrinthGraph;
+import graph.Model.MultiEdge;
 import repository.DatabaseManager;
 import java.io.IOException;
 import java.time.LocalDate;

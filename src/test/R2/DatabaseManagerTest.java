@@ -1,6 +1,11 @@
 package test.R2;
 
-import domain.*;
+import domain.Artifacts.TechRelic;
+import domain.Common.Entity;
+import domain.Environment.Room;
+import domain.Robots.CarrierRobot;
+import domain.Robots.ExplorerRobot;
+import domain.Robots.Robot;
 import repository.DatabaseManager;
 
 import java.time.LocalDate;

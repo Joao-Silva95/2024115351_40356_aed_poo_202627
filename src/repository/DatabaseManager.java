@@ -1,6 +1,9 @@
 package repository;
 
-import domain.*;
+import domain.Artifacts.Artifact;
+import domain.Common.Entity;
+import domain.Environment.Room;
+import domain.Robots.Robot;
 import edu.princeton.cs.algs4.RedBlackBST;
 import edu.princeton.cs.algs4.SeparateChainingHashST;
 

@@ -1,6 +1,6 @@
-package graph;
+package graph.Results;
 
-import domain.Robot;
+import domain.Robots.Robot;
 
 /**
  * Par de robôs que operaram no mesmo setor.

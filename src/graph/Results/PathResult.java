@@ -1,4 +1,6 @@
-package graph;
+package graph.Results;
+
+import graph.Model.MultiEdge;
 
 import java.util.List;
 

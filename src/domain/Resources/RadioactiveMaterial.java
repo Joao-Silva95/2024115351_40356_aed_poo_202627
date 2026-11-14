@@ -1,4 +1,8 @@
-package domain;
+package domain.Resources;
+
+import domain.Artifacts.Artifact;
+import domain.Artifacts.ArtifactType;
+import domain.Common.Entity;
 
 /**
  * Material radioativo (perigoso)
@@ -19,7 +23,7 @@ public class RadioactiveMaterial extends Artifact {
      * @param radiationLevel  radiação (mSv/h)
      */
     public RadioactiveMaterial(int id, String name, double weight, int scientificValue, int dangerLevel, double radiationLevel) {
-        super(id, name, weight, scientificValue, dangerLevel);
+        super(id, name, ArtifactType.RADIOACTIVE_MATERIAL, weight, scientificValue, dangerLevel);
         this.radiationLevel = radiationLevel;
     }
 

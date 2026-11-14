@@ -1,4 +1,4 @@
-package graph;
+package graph.Enums;
 
 /** Tipo de relação representada por uma aresta do grafo. */
 public enum RelationType {

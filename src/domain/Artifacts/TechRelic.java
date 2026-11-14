@@ -1,4 +1,7 @@
-package domain;
+package domain.Artifacts;
+
+import domain.Common.Entity;
+import domain.Artifacts.ArtifactType;
 
 /**
  * Relíquia tecnológica de uma civilização anterior.
@@ -19,7 +22,8 @@ public class TechRelic extends Artifact {
      * @param historicalEra   época histórica
      */
     public TechRelic(int id, String name, double weight, int scientificValue, int dangerLevel, String historicalEra) {
-        super(id, name, weight, scientificValue, dangerLevel);
+        // Passa automaticamente ArtifactType.TECH_RELIC para a superclasse Artifact
+        super(id, name, ArtifactType.TECH_RELIC, weight, scientificValue, dangerLevel);
         this.historicalEra = historicalEra;
     }
 
@@ -36,6 +40,7 @@ public class TechRelic extends Artifact {
     public void setHistoricalEra(String historicalEra) {
         this.historicalEra = historicalEra;
     }
+
     @Override
     protected String extraFields() {
         return super.extraFields() + ";" + historicalEra;

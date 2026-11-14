@@ -1,6 +1,12 @@
 package test.Common;
 
-import domain.*;
+import domain.Artifacts.TechRelic;
+import domain.Common.Entity;
+import domain.Environment.Room;
+import domain.Resources.EnergyCrystal;
+import domain.Resources.RadioactiveMaterial;
+import domain.Robots.CarrierRobot;
+import domain.Robots.ExplorerRobot;
 import repository.DatabaseManager;
 
 import java.io.IOException;

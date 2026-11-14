@@ -1,7 +1,15 @@
 package test.R8;
 
-import domain.*;
-import graph.*;
+import domain.Artifacts.Artifact;
+import domain.Artifacts.TechRelic;
+import domain.Environment.Room;
+import domain.Robots.ExplorerRobot;
+import domain.Robots.Robot;
+import graph.Enums.RelationType;
+import graph.Enums.WeightType;
+import graph.Model.LabyrinthGraph;
+import graph.Results.PathResult;
+import graph.Results.RobotPair;
 import repository.DatabaseManager;
 
 import java.time.LocalDate;

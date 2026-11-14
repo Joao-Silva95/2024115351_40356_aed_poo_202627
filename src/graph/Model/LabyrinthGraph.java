@@ -1,9 +1,9 @@
-package graph;
+package graph.Model;
 
-import domain.Artifact;
-import domain.Entity;
-import domain.Robot;
-import domain.Room;
+import domain.Artifacts.Artifact;
+import domain.Common.Entity;
+import domain.Robots.Robot;
+import domain.Environment.Room;
 import edu.princeton.cs.algs4.CC;
 import edu.princeton.cs.algs4.Digraph;
 import edu.princeton.cs.algs4.DijkstraSP;
@@ -11,6 +11,12 @@ import edu.princeton.cs.algs4.DirectedEdge;
 import edu.princeton.cs.algs4.EdgeWeightedDigraph;
 import edu.princeton.cs.algs4.Graph;
 import edu.princeton.cs.algs4.KosarajuSharirSCC;
+import graph.Results.CollectionStats;
+import graph.Enums.RelationType;
+import graph.Enums.WeightType;
+import graph.Interfaces.GraphManagement;
+import graph.Results.PathResult;
+import graph.Results.RobotPair;
 
 import java.util.ArrayList;
 import java.util.HashMap;

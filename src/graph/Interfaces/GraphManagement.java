@@ -1,8 +1,13 @@
-package graph;
+package graph.Interfaces;
 
-import domain.Artifact;
-import domain.Entity;
-import domain.Robot;
+import domain.Artifacts.Artifact;
+import domain.Common.Entity;
+import domain.Robots.Robot;
+import graph.Enums.WeightType;
+import graph.Model.LabyrinthGraph;
+import graph.Results.CollectionStats;
+import graph.Results.PathResult;
+import graph.Results.RobotPair;
 
 import java.util.List;
 import java.util.Optional;

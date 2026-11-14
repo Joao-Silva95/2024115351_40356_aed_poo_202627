@@ -1,4 +1,6 @@
-package domain;
+package domain.Robots;
+
+import domain.Common.Entity;
 
 import java.util.Vector;
 import java.time.LocalDate;

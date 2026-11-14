@@ -1,4 +1,8 @@
-package domain;
+package domain.Resources;
+
+import domain.Artifacts.Artifact;
+import domain.Artifacts.ArtifactType;
+import domain.Common.Entity;
 
 /**
  * Cristal energético, fonte de energia para os robôs.
@@ -19,7 +23,7 @@ public class EnergyCrystal extends Artifact {
      * @param energyYield     energia fornecida
      */
     public EnergyCrystal(int id, String name, double weight, int scientificValue, int dangerLevel, double energyYield) {
-        super(id, name, weight, scientificValue, dangerLevel);
+        super(id, name, ArtifactType.ENERGY_CRYSTAL, weight, scientificValue, dangerLevel);
         this.energyYield = energyYield;
     }
 

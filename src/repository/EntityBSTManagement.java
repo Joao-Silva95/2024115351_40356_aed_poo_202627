@@ -2,7 +2,7 @@ package repository;
 
 import java.util.List;
 
-import domain.Entity;
+import domain.Common.Entity;
 
 public interface EntityBSTManagement {
 

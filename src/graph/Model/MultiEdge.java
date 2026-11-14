@@ -1,4 +1,6 @@
-package graph;
+package graph.Model;
+
+import graph.Enums.RelationType;
 
 /**
  * Aresta do grafo com vários pesos (distância, energia, radiação, tempo), tipo de relação e timestamp.

@@ -1,4 +1,4 @@
-package graph;
+package graph.Results;
 
 /**
  * Estatísticas de recolha de artefactos.

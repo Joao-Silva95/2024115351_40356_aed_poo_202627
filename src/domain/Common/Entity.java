@@ -1,4 +1,4 @@
-package domain;
+package domain.Common;
 
 /**
  * Entidade base do sistema, identificada por um ID inteiro único

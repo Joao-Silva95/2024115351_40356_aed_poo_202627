@@ -1,6 +1,8 @@
 package test.R3;
 
-import domain.*;
+import domain.Artifacts.Artifact;
+import domain.Environment.Room;
+import domain.Robots.Robot;
 import repository.DatabaseManager;
 
 import java.util.Set;
