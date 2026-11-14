@@ -6,7 +6,7 @@ Projeto desenvolvido no âmbito das Unidades Curriculares de **Algoritmos e Estr
 
 ## Autores
 * **João Miguel Moreira Silva** — Nº 2024115351 (2024115351@ufp.edu.pt)
-* **[Nome Completo Aluno 2]** — Nº `[Número]` (`[numero]@ufp.edu.pt`)
+* **Tiago Gonçalves Martins** — Nº 40356 (40356@ufp.edu.pt)
 
 ---
 
